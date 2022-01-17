@@ -20,7 +20,7 @@ const HeroSection = () => {
     }
   };
 
-  const CallToAction = () => {
+  const callToAction = () => {
     return (
       <section className="w-full h-full bg-gray-900 text-white relative min-h-screen lg:min-h-0">
         <div className="absolute w-[500px] h-[500px] bg-white/40 -top-[250px] -left-[250px] rounded-full blur-[500px]"></div>
@@ -57,14 +57,14 @@ const HeroSection = () => {
     );
   };
 
-  const FeaturedCards = () => {
+  const featuredCards = () => {
     return (
       <div className="flex-1 w-full h-full relative overflow-hidden min-h-screen lg:min-h-0">
         {destinations.map((item, index) => (
           <img
             key={index}
             src={item.coverImage}
-            className={`absolute w-full h-full inset-0 object-cover transition-opacity duration-300 scale-150 ${
+            className={`absolute w-full h-full inset-0 object-cover transition-all duration-300 scale-150 ${
               index === selectedCard ? "opacity-100" : "opacity-0"
             }`}
           />
@@ -128,15 +128,11 @@ const HeroSection = () => {
 
   return (
     <div
-      className="w-full lg:h-screen lg:max-h-[1080px] flex flex-col lg:flex-row relative"
+      className="w-full lg:h-screen lg:max-h-[1080px] flex flex-col lg:flex-row relative overflow-hidden"
       ref={heroSection}
     >
-      <div className="flex-[4]">
-        <CallToAction />
-      </div>
-      <div className="flex-[3]">
-        <FeaturedCards />
-      </div>
+      <div className="flex-[4]">{callToAction()}</div>
+      <div className="flex-[3]">{featuredCards()}</div>
       <div className="w-full absolute top-0 text-white">
         <Header />
       </div>
