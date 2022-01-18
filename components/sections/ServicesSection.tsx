@@ -9,7 +9,7 @@ const ServicesSection = () => {
           <h2 className="font-black text-4xl md:text-5xl leading-snug">
             Get Experience Which are fun
           </h2>
-          <p className="text-xl leading-relaxed">
+          <p className="md:text-xl leading-relaxed">
             Bersama BalonKUN kamu bisa mendapatkan pengalaman menaiki balon
             udara yang sangat menyenangkan.
           </p>
@@ -27,43 +27,49 @@ const ServicesSection = () => {
         </div>
 
         <div className="flex flex-col gap-8 justify-evenly">
-          <div className="flex items-start gap-8">
+          <div className="flex items-start gap-6 md:gap-8">
             <img
               src="/svg/Wallet.svg"
               alt="Wallet"
-              className="w-20 h-20 object-contain"
+              className="md:w-20 md:h-20 w-16 h-16 object-contain"
             />
             <div className="flex-1 flex flex-col gap-2">
-              <h3 className="text-2xl font-bold">Affordable prices</h3>
-              <p className="text-xl">
+              <h3 className="text-xl md:text-2xl font-bold">
+                Affordable prices
+              </h3>
+              <p className="md:text-xl">
                 Kami Menyediakan beberapa harga yang sangat terjangkau di
                 bandingkan yang lainya.
               </p>
             </div>
           </div>
-          <div className="flex items-start gap-8">
+          <div className="flex items-start gap-6 md:gap-8">
             <img
               src="/svg/User.svg"
               alt="Wallet"
-              className="w-20 h-20 object-contain"
+              className="md:w-20 md:h-20 w-16 h-16 object-contain"
             />
             <div className="flex-1 flex flex-col gap-2">
-              <h3 className="text-2xl font-bold">Unforgettable experience</h3>
-              <p className="text-xl">
+              <h3 className="text-xl md:text-2xl font-bold">
+                Unforgettable experience
+              </h3>
+              <p className="md:text-xl">
                 Kami memberikan pengalaman manaiki balon udara yang sangat tak
                 terlupakan.
               </p>
             </div>
           </div>
-          <div className="flex items-start gap-8">
+          <div className="flex items-start gap-6 md:gap-8">
             <img
               src="/svg/Heart.svg"
               alt="Wallet"
-              className="w-20 h-20 object-contain"
+              className="md:w-20 md:h-20 w-16 h-16 object-contain"
             />
             <div className="flex-1 flex flex-col gap-2">
-              <h3 className="text-2xl font-bold">Very Friendly Service</h3>
-              <p className="text-xl">
+              <h3 className="text-xl md:text-2xl font-bold">
+                Very Friendly Service
+              </h3>
+              <p className="md:text-xl">
                 Kami akan memberikan pelayanan yang sangat baik dan ramah demi
                 pelanggan kami.
               </p>

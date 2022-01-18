@@ -9,7 +9,7 @@ const GallerySection = () => {
       <div className="container mx-auto max-w-7xl px-4 text-center md:text-left">
         <h2 className="font-black text-4xl md:text-5xl mb-8">Our Gallery</h2>
         <div className="flex flex-col md:flex-row gap-4  justify-between items-center mb-14">
-          <p className="max-w-2xl text-xl flex-1">
+          <p className="max-w-2xl md:text-xl flex-1">
             Kami memiliki beberapa dokumentasi yang kita buat sendiri ketika
             sedang berada di spot balon udara.
           </p>

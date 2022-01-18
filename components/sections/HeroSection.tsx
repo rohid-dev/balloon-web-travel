@@ -27,23 +27,21 @@ const HeroSection = () => {
         <div className="absolute w-[500px] h-[500px] bg-white/40 -top-[250px] -left-[250px] rounded-full blur-[500px]"></div>
         <div className="absolute inset-0 z-10 flex flex-col">
           <div className="flex justify-center flex-col flex-1 px-4 md:px-14 py-12 pt-32 items-start">
-            <h2 className="font-bold text-4xl md:text-7xl leading-snug mb-8">
-              <span className="block">Enjoy your vacation</span>
-              <span className="block">
+            <h2 className="font-bold text-3xl md:text-7xl mb-8 text-center md:text-left w-full">
+              <span className="block leading-snug">Enjoy your vacation</span>
+              <span className="block leading-snug">
                 With <span className="text-yellow-500">BalloonKUN</span>
               </span>
-              <span className="block">Travel</span>
+              <span className="block leading-snug">Travel</span>
             </h2>
-            <p className="md:text-2xl leading-snug opacity-70 mb-14">
+            <p className="md:text-2xl leading-snug opacity-70 mb-14 text-center md:text-left">
               With BalloonKUN you can feel a new experience by riding a hot air
               balloon with a very beautiful surrounding view to spoil your eyes.
             </p>
-            <div className="flex flex-col w-full md:flex-row items-center gap-8 mt-auto md:mt-0">
+            <div className="flex flex-col w-full md:flex-row items-center gap-8">
               <Link href="#destinations">
-                <a className="bg-gradient-to-br from-yellow-300 to-yellow-600 h-14 w-full md:w-auto px-4 rounded-full flex flow-row items-center justify-center gap-4 shadow-lg shadow-yellow-500/30">
-                  <p className="text-slate-900 ml-4 mr-auto">
-                    View Destinations
-                  </p>
+                <a className="bg-gradient-to-br from-yellow-300 to-yellow-600 h-14 px-4 rounded-full flex flow-row items-center justify-center gap-4 shadow-lg shadow-yellow-500/30">
+                  <p className="text-slate-900 ml-4">View Destinations</p>
                   <div className="flex items-center justify-center w-8 h-8 rounded-full bg-slate-900">
                     <ChevronRightIcon className="w-5 h-5" />
                   </div>
@@ -104,6 +102,7 @@ const HeroSection = () => {
                 onClick={() => {
                   setSelectedCard(index);
                 }}
+                key={index}
               >
                 <div
                   className={`w-6 md:w-10 h-1 bg-white rounded transition-all duration-300 ${
@@ -146,8 +145,8 @@ const HeroSection = () => {
       className="w-full lg:h-screen lg:max-h-[1080px] flex flex-col lg:flex-row relative overflow-hidden"
       ref={heroSection}
     >
-      <div className="flex-[4]">{callToAction()}</div>
-      <div className="flex-[3]">{featuredCards()}</div>
+      <div className="lg:flex-[4]">{callToAction()}</div>
+      <div className="lg:flex-[3]">{featuredCards()}</div>
       <div className="w-full absolute top-0 text-white">
         <Header />
       </div>

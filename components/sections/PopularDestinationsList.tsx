@@ -25,7 +25,7 @@ const PopularDestinationsList = () => {
       <h2 className="font-black text-4xl md:text-5xl leading-snug">
         Most Popular Destinations
       </h2>
-      <p className="text-xl leading-relaxed flex-1">
+      <p className="md:text-xl leading-relaxed flex-1">
         Beberapa destinasi paling populer untuk menaiki balon udara dengan
         pemandangan yang indah.
       </p>

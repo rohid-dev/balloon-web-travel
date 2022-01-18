@@ -48,6 +48,7 @@ const TestimonialSection = () => {
                   let isActive = index <= testimonials[showIndex].rating - 1;
                   return (
                     <StarIcon
+                      key={index}
                       className={`w-6 h-6 ${
                         isActive ? "text-orange-500" : "text-orange-100"
                       }`}
@@ -64,10 +65,10 @@ const TestimonialSection = () => {
           </div>
         </div>
         <div className="flex flex-col gap-2 items-center justify-center flex-1 text-center lg:text-left">
-          <h2 className="font-black text-4xl md:text-5xl mb-6 leading-snug">
+          <h2 className="font-black text-3xl md:text-5xl mb-6 leading-snug">
             Testimonials BalloonKUN Customers
           </h2>
-          <p className="text-xl">
+          <p className="md:text-xl">
             Apasih yang pelanggan kami rasakan ketika bersama BalonKUN, cek
             disamping ini yu!
           </p>

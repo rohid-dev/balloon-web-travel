@@ -109,7 +109,7 @@ const BestDestinationsList = () => {
         <h2 className="text-center font-bold text-4xl md:text-5xl mb-6">
           Best Place Destinations
         </h2>
-        <p className="text-center text-xl max-w-lg mx-auto mb-6">
+        <p className="text-center md:text-xl max-w-lg mx-auto mb-6">
           We provide several spot options for those of you who want to ride a
           balloon
         </p>

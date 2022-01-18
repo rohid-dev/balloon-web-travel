@@ -45,16 +45,16 @@ const DestinationCard = ({
         <div className="flex flex-col gap-1">
           <p className="text-sm">Price</p>
           <p>
-            <span className="text-2xl font-bold">
+            <span className="text-xl md:text-2xl font-bold">
               $
               {destination.price.toLocaleString(undefined, {
                 minimumFractionDigits: 2,
               })}
             </span>
-            <span className="opacity-50">/Person</span>
+            <span className="opacity-50 text-sm md:text-base">/Person</span>
           </p>
         </div>
-        <button className="bg-gradient-to-br from-indigo-400 to-indigo-600 h-10 px-4 rounded-full text-white shadow-lg shadow-indigo-500/50">
+        <button className="bg-gradient-to-br from-indigo-400 to-indigo-600 h-10 px-4 rounded-full text-white shadow-lg shadow-indigo-500/50 text-sm md:text-base">
           Ticket booking
         </button>
       </div>
