@@ -10,9 +10,8 @@ const GallerySection = () => {
         <h2 className="font-black text-4xl md:text-5xl mb-8">Our Gallery</h2>
         <div className="flex flex-col md:flex-row gap-4  justify-between items-center mb-14">
           <p className="max-w-2xl text-xl flex-1">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet
-            temporibus saepe voluptatum modi fugiat odit odio nostrum quos
-            maiores ut!
+            Kami memiliki beberapa dokumentasi yang kita buat sendiri ketika
+            sedang berada di spot balon udara.
           </p>
           <Link href="#">
             <a className="flex gap-2 items-center text-blue-500">

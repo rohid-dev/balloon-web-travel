@@ -68,8 +68,8 @@ const TestimonialSection = () => {
             Testimonials BalloonKUN Customers
           </h2>
           <p className="text-xl">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse
-            laboriosam dolore corrupti aperiam omnis possimus.
+            Apasih yang pelanggan kami rasakan ketika bersama BalonKUN, cek
+            disamping ini yu!
           </p>
         </div>
       </div>

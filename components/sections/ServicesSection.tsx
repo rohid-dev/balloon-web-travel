@@ -4,15 +4,14 @@ import React from "react";
 const ServicesSection = () => {
   return (
     <section className="mb-48">
-      <div className="container mx-auto max-w-7xl grid grid-cols-2 gap-12">
-        <div className="flex flex-col gap-8">
-          <h2 className="font-black text-5xl leading-snug">
-            Get Experience
-            <br /> Which are fun
+      <div className="container mx-auto max-w-7xl grid lg:grid-cols-2 gap-12 px-4">
+        <div className="flex flex-col gap-8 text-center md:text-left">
+          <h2 className="font-black text-4xl md:text-5xl leading-snug">
+            Get Experience Which are fun
           </h2>
           <p className="text-xl leading-relaxed">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
-            deserunt ducimus alias quam veritatis animi?
+            Bersama BalonKUN kamu bisa mendapatkan pengalaman menaiki balon
+            udara yang sangat menyenangkan.
           </p>
           <div className="relative overflow-hidden aspect-[16/9] rounded-3xl">
             <img
@@ -37,8 +36,8 @@ const ServicesSection = () => {
             <div className="flex-1 flex flex-col gap-2">
               <h3 className="text-2xl font-bold">Affordable prices</h3>
               <p className="text-xl">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Perferendis tempora voluptate similique quia libero?
+                Kami Menyediakan beberapa harga yang sangat terjangkau di
+                bandingkan yang lainya.
               </p>
             </div>
           </div>
@@ -51,8 +50,8 @@ const ServicesSection = () => {
             <div className="flex-1 flex flex-col gap-2">
               <h3 className="text-2xl font-bold">Unforgettable experience</h3>
               <p className="text-xl">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius,
-                nemo illo.
+                Kami memberikan pengalaman manaiki balon udara yang sangat tak
+                terlupakan.
               </p>
             </div>
           </div>
@@ -65,8 +64,8 @@ const ServicesSection = () => {
             <div className="flex-1 flex flex-col gap-2">
               <h3 className="text-2xl font-bold">Very Friendly Service</h3>
               <p className="text-xl">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Asperiores rerum sed illum?
+                Kami akan memberikan pelayanan yang sangat baik dan ramah demi
+                pelanggan kami.
               </p>
             </div>
           </div>

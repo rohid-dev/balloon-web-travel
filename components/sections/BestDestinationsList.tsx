@@ -50,9 +50,9 @@ const BestDestinationsList = () => {
 
   const RenderShortingButtons = () => (
     <div className="flex items-center justify-center">
-      <div className="flex items-center justify-center gap-4 bg-slate-100 p-1 rounded-full">
+      <div className="flex items-center justify-center gap-2 bg-slate-100 p-1 rounded-full overflow-hidden">
         <button
-          className={`px-8 h-12 text-lg rounded-full ${
+          className={`px-3 md:px-8 py-2 md:h-12 text-sm md:text-lg rounded-full truncate ${
             selectedShortItem === ShortOption.Recommended
               ? "bg-gradient-to-br from-yellow-300 to-yellow-500"
               : "text-slate-600"
@@ -64,7 +64,7 @@ const BestDestinationsList = () => {
           {ShortOption.Recommended}
         </button>
         <button
-          className={`px-8 h-12 text-lg rounded-full ${
+          className={`px-3 md:px-8 py-2 md:h-12 text-sm md:text-lg rounded-full ${
             selectedShortItem === ShortOption.Rating
               ? "bg-gradient-to-br from-yellow-300 to-yellow-500"
               : "text-slate-600"
@@ -76,7 +76,7 @@ const BestDestinationsList = () => {
           {ShortOption.Rating}
         </button>
         <button
-          className={`px-8 h-12 text-lg rounded-full ${
+          className={`px-3 md:px-8 py-2 md:h-12 text-sm md:text-lg overflow-hidden rounded-full truncate ${
             selectedShortItem === ShortOption.FrequentlyVisited
               ? "bg-gradient-to-br from-yellow-300 to-yellow-500"
               : "text-slate-600"
@@ -92,7 +92,7 @@ const BestDestinationsList = () => {
   );
 
   const CardList = () => (
-    <div className="flex justify-center items-center flex-col md:flex-row gap-8 content-center justify-items-center">
+    <div className="gap-8 grid md:grid-cols-2 xl:grid-cols-3 justify-items-center">
       {bestDestinations.map((item) => (
         <Card
           key={item.id}
@@ -105,8 +105,8 @@ const BestDestinationsList = () => {
 
   return (
     <section id="destinations" className="mb-48 scroll-m-10">
-      <div className="container mx-auto">
-        <h2 className="text-center font-bold text-5xl mb-6">
+      <div className="container mx-auto max-w-7xl px-4">
+        <h2 className="text-center font-bold text-4xl md:text-5xl mb-6">
           Best Place Destinations
         </h2>
         <p className="text-center text-xl max-w-lg mx-auto mb-6">
