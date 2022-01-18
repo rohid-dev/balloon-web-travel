@@ -18,7 +18,7 @@ const TestimonialSection = () => {
   const isIncrementButtonEnabled = () => showIndex < testimonials.length - 1;
 
   return (
-    <section className="bg-slate-100">
+    <section className="bg-slate-100" id="testimonials">
       <div className="container mx-auto max-w-7xl grid grid-cols-2 gap-14">
         <div className="flex gap-8 my-24">
           <div className="flex flex-col justify-center items-center h-full gap-4">

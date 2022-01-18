@@ -1,10 +1,11 @@
 import { ArrowRightIcon } from "@heroicons/react/outline";
 import Link from "next/link";
 import React from "react";
+import { PlayButton } from "../buttons";
 
 const GallerySection = () => {
   return (
-    <section className="mb-48">
+    <section id="gallery" className="mb-48 scroll-m-10">
       <div className="container mx-auto max-w-7xl">
         <h2 className="font-black text-5xl mb-8">Our Gallery</h2>
         <div className="flex justify-between items-center mb-14">
@@ -36,12 +37,15 @@ const GallerySection = () => {
                 className="object-cover w-full h-full"
               />
             </div>
-            <div className="rounded-3xl overflow-hidden">
+            <div className="rounded-3xl overflow-hidden relative">
               <img
                 src="https://images.unsplash.com/photo-1641157140295-b477ca55ddef?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2340&q=80"
                 alt="Image"
                 className="object-cover w-full h-full"
               />
+              <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+                <PlayButton />
+              </div>
             </div>
             <div className="rounded-3xl overflow-hidden">
               <img

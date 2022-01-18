@@ -15,7 +15,8 @@ const Header = () => {
         <div className="w-4"></div>
         <Link href="/">
           <a className="text tracking-wide flex items-center gap-1">
-            <p>Destinations</p> <ChevronDownIcon className="w-4 h-4" />
+            <p>Destinations</p>
+            {/* <ChevronDownIcon className="w-4 h-4" /> */}
           </a>
         </Link>
         <Link href="/">

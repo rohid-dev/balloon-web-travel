@@ -5,10 +5,10 @@ import { FacebookIcon, InstagramIcon, TwitterIcon } from "./icons";
 const Footer = () => {
   return (
     <div className="bg-gray-900 text-white overflow-hidden relative">
-      <div className="container mx-auto max-w-7xl">
-        <div className="py-24 flex justify-between gap-12">
+      <div className="container mx-auto max-w-7xl px-4">
+        <div className="py-16 md:py-24 flex flex-col md:flex-row justify-between gap-12">
           <div className="max-w-lg">
-            <h3 className="uppercase text-3xl font-black mb-6">Balonkun</h3>
+            <h3 className="uppercase text-3xl font-black mb-6">BALLOONKUN</h3>
             <p className="text-gray-300">
               Dengan BalonKUN kamu bisa merasakan pengalaman baru dengan menaiki
               balon udara dengan pemandangan sekitar yang sangat indah untuk
@@ -16,7 +16,7 @@ const Footer = () => {
             </p>
           </div>
 
-          <div className="flex justify-between gap-8 w-full max-w-xl">
+          <div className="flex flex-row flex-wrap justify-between gap-8 w-full max-w-xl">
             <div>
               <h4 className="pb-2 text-yellow-500">Destinatinos</h4>
               <ul className="">
@@ -55,7 +55,7 @@ const Footer = () => {
                   </Link>
                 </li>
                 <li>
-                  <Link href="#">
+                  <Link href="#testimonials">
                     <a className="inline-block py-2 text-slate-400 hover:text-white">
                       Testimonials
                     </a>
@@ -103,9 +103,9 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="py-12 flex justify-between gap-12">
+        <div className="py-12 flex flex-col sm:flex-row justify-between gap-4">
           <p className="text-slate-500">Copyright © 2021</p>
-          <div className="flex items-center gap-12">
+          <div className="flex items-center gap-x-12 gap-y-4 flex-wrap">
             <Link href="#">
               <a className="text-slate-400 hover:text-white">
                 Terms & conditions

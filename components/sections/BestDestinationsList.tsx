@@ -104,7 +104,7 @@ const BestDestinationsList = () => {
   );
 
   return (
-    <section className="mb-48">
+    <section id="destinations" className="mb-48 scroll-m-10">
       <div className="container mx-auto">
         <h2 className="text-center font-bold text-5xl mb-6">
           Best Place Destinations

@@ -1,7 +1,7 @@
 import FacebookIcon from "./FacebookIcon";
 import InstagramIcon from "./InstagramIcon";
-import PlayButton from "./PlayButton";
+import PlayIcon from "./PlayIcon";
 import TwitterIcon from "./TwitterIcon";
 import WhatsAppIcon from "./WhatsAppIcon";
 
-export { PlayButton, WhatsAppIcon, FacebookIcon, TwitterIcon, InstagramIcon };
+export { PlayIcon, WhatsAppIcon, FacebookIcon, TwitterIcon, InstagramIcon };

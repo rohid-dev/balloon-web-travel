@@ -1,6 +1,6 @@
 import React, { ReactElement } from "react";
 
-const PlayButton = (props: React.SVGProps<SVGSVGElement>) => {
+const PlayIcon = (props: React.SVGProps<SVGSVGElement>) => {
   return (
     <svg
       width="24"
@@ -18,4 +18,4 @@ const PlayButton = (props: React.SVGProps<SVGSVGElement>) => {
   );
 };
 
-export default PlayButton;
+export default PlayIcon;

@@ -1,7 +1,7 @@
 import { LocationMarkerIcon, StarIcon } from "@heroicons/react/solid";
 import React from "react";
 import { DestinationType } from "../../types";
-import { PlayButton } from "../icons";
+import { PlayButton } from "../buttons";
 
 const DestinationCard = ({
   destination,
@@ -19,8 +19,9 @@ const DestinationCard = ({
           src={destination.coverImage}
           className="absolute inset-0 w-full h-full object-cover"
         />
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex items-center justify-center w-16 h-16 rounded-full bg-gradient-to-br from-gray-100 to-white ring-[12px] ring-white/20">
-          <PlayButton className="w-14 h-14 text-yellow-500" />
+
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+          <PlayButton />
         </div>
         <button className="flex items-center p-1.5 rounded-full bg-gray-500/20 absolute top-4 left-4 backdrop-blur-md">
           <div className="flex items-center justify-center w-8 h-8 rounded-full bg-gradient-to-br from-yellow-400 to-yellow-600">

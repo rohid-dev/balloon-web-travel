@@ -4,11 +4,12 @@ import {
   ArrowRightIcon,
   ChevronRightIcon,
 } from "@heroicons/react/outline";
+import Link from "next/link";
 import React, { useRef, useState } from "react";
 import destinations from "../../data/destinations";
 import { Card } from "../cards";
 import Header from "../Header";
-import { PlayButton } from "../icons";
+import { PlayIcon } from "../icons";
 
 const HeroSection = () => {
   const heroSection = useRef<HTMLDivElement>(null);
@@ -38,18 +39,22 @@ const HeroSection = () => {
               balloon with a very beautiful surrounding view to spoil your eyes.
             </p>
             <div className="flex flex-row items-center gap-8">
-              <button className="bg-gradient-to-br from-yellow-300 to-yellow-600 h-14 px-4 rounded-full flex flow-row items-center justify-center gap-4 shadow-lg shadow-yellow-500/30">
-                <p className="text-slate-900 ml-4">View Destinations</p>
-                <div className="flex items-center justify-center w-8 h-8 rounded-full bg-slate-900">
-                  <ChevronRightIcon className="w-5 h-5" />
-                </div>
-              </button>
-              <button className="h-14 px-4 rounded-full flex flow-row items-center justify-center gap-4">
-                <div className="flex items-center justify-center w-8 h-8 rounded-full bg-white ring-[6px] ring-white/20">
-                  <PlayButton className="w-8 h-8 text-yellow-500" />
-                </div>
-                <p>Our Gallery</p>
-              </button>
+              <Link href="#destinations">
+                <a className="bg-gradient-to-br from-yellow-300 to-yellow-600 h-14 px-4 rounded-full flex flow-row items-center justify-center gap-4 shadow-lg shadow-yellow-500/30">
+                  <p className="text-slate-900 ml-4">View Destinations</p>
+                  <div className="flex items-center justify-center w-8 h-8 rounded-full bg-slate-900">
+                    <ChevronRightIcon className="w-5 h-5" />
+                  </div>
+                </a>
+              </Link>
+              <Link href="#gallery">
+                <a className="h-14 px-4 rounded-full flex flow-row items-center justify-center gap-4 group">
+                  <div className="flex items-center justify-center w-10 h-10 rounded-full bg-white ring-4 ring-white/20 group-hover:ring-8 group-active:ring-4 transition-all">
+                    <PlayIcon className="w-8 h-8 text-yellow-500" />
+                  </div>
+                  <p>Our Gallery</p>
+                </a>
+              </Link>
             </div>
           </div>
         </div>
@@ -90,14 +95,22 @@ const HeroSection = () => {
             ))}
           </div>
 
-          <div className="absolute bottom-10 flex gap-4">
+          <div className="absolute bottom-10 flex items-end">
             {destinations.map((_, index) => (
-              <div
-                className="w-10 h-1 bg-white rounded-full transition-opacity duration-300"
-                style={{
-                  opacity: index === selectedCard ? 1 : 0.5,
+              <button
+                className="p-4 group"
+                onClick={() => {
+                  setSelectedCard(index);
                 }}
-              />
+              >
+                <div
+                  className={`w-10 h-1 bg-white rounded transition-all duration-300 ${
+                    index !== selectedCard
+                      ? "opacity-50 group-hover:opacity-75"
+                      : "opacity-100"
+                  }`}
+                />
+              </button>
             ))}
           </div>
 
