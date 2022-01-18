@@ -19,18 +19,18 @@ const TestimonialSection = () => {
 
   return (
     <section className="bg-slate-100" id="testimonials">
-      <div className="container mx-auto max-w-7xl grid grid-cols-2 gap-14">
-        <div className="flex gap-8 my-24">
-          <div className="flex flex-col justify-center items-center h-full gap-4">
+      <div className="container mx-auto max-w-7xl flex flex-col-reverse lg:flex-row gap-14 px-4 py-24">
+        <div className="flex gap-8 flex-col-reverse lg:flex-row flex-1">
+          <div className="flex flex-row lg:flex-col justify-center items-center h-full gap-4">
             <ArrowButton
               onClick={decrementShowIndex}
               disabled={!isDecrementButtonEnabled()}
-              className="-rotate-90"
+              className="rotate-180 lg:-rotate-90"
             />
             <ArrowButton
               onClick={incrementShowIndex}
               disabled={!isIncrementButtonEnabled()}
-              className="rotate-90"
+              className="lg:rotate-90"
             />
           </div>
           <div className="flex-1 items-center justify-center flex">
@@ -63,8 +63,8 @@ const TestimonialSection = () => {
             </div>
           </div>
         </div>
-        <div className="flex flex-col gap-2 items-center justify-center">
-          <h2 className="font-black text-5xl mb-6 leading-snug">
+        <div className="flex flex-col gap-2 items-center justify-center flex-1 text-center lg:text-left">
+          <h2 className="font-black text-4xl md:text-5xl mb-6 leading-snug">
             Testimonials BalloonKUN Customers
           </h2>
           <p className="text-xl">
