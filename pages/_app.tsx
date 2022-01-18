@@ -4,10 +4,10 @@ import Footer from "../components/Footer";
 
 const MyApp = ({ Component, pageProps }) => {
   return (
-    <div className="overflow-x-hidden">
+    <Fragment>
       <Component {...pageProps} />
       <Footer />
-    </div>
+    </Fragment>
   );
 };
 

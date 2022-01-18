@@ -1,4 +1,4 @@
-import { ChevronDownIcon, MenuIcon } from "@heroicons/react/outline";
+import { MenuIcon } from "@heroicons/react/outline";
 import Link from "next/link";
 import React from "react";
 import { WhatsAppIcon } from "./icons";

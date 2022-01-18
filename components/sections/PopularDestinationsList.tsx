@@ -1,4 +1,3 @@
-import { ArrowLeftIcon, ArrowRightIcon } from "@heroicons/react/outline";
 import React, { useState } from "react";
 import destinations from "../../data/destinations";
 import { ArrowButton } from "../buttons";
