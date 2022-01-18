@@ -1,6 +1,7 @@
 import { ArrowLeftIcon, ArrowRightIcon } from "@heroicons/react/outline";
 import React, { useState } from "react";
 import destinations from "../../data/destinations";
+import { ArrowButton } from "../buttons";
 import { Card } from "../cards";
 
 const PopularDestinationsList = () => {
@@ -34,20 +35,15 @@ const PopularDestinationsList = () => {
           </p>
         </div>
         <div className="flex justify-end items-center gap-8">
-          <button
-            className="w-14 h-14 rounded-full ring-4 ring-gray-200 active:bg-gradient-to-tl bg-gradient-to-br disabled:bg-none disabled:text-slate-300 from-slate-600 to-slate-900 text-white flex items-center justify-center"
+          <ArrowButton
             onClick={decrementShowIndex}
             disabled={!isDecrementButtonEnabled()}
-          >
-            <ArrowLeftIcon className="w-6 h-6" />
-          </button>
-          <button
-            className="w-14 h-14 rounded-full ring-4 ring-gray-200 active:bg-gradient-to-tl bg-gradient-to-br disabled:bg-none disabled:text-slate-300 from-slate-600 to-slate-900 text-white flex items-center justify-center"
+            className="rotate-180"
+          />
+          <ArrowButton
             onClick={incrementShowIndex}
             disabled={!isIncrementButtonEnabled()}
-          >
-            <ArrowRightIcon className="w-6 h-6" />
-          </button>
+          />
         </div>
       </div>
     </div>

@@ -21,7 +21,7 @@ const GallerySection = () => {
           </Link>
         </div>
         <div className="grid grid-cols-2 gap-4">
-          <div className="h-[500px] rounded-3xl overflow-hidden shadow-xl">
+          <div className="h-[500px] rounded-3xl overflow-hidden">
             <img
               src="https://images.unsplash.com/photo-1507608443039-bfde4fbcd142?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80"
               alt="Image"
@@ -29,21 +29,21 @@ const GallerySection = () => {
             />
           </div>
           <div className="h-[500px] grid grid-cols-2 gap-4">
-            <div className="col-span-2 rounded-3xl overflow-hidden shadow-xl">
+            <div className="col-span-2 rounded-3xl overflow-hidden">
               <img
                 src="https://images.unsplash.com/photo-1589402903416-2d02f303d12c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2352&q=80"
                 alt="Image"
                 className="object-cover w-full h-full"
               />
             </div>
-            <div className="rounded-3xl overflow-hidden shadow-xl">
+            <div className="rounded-3xl overflow-hidden">
               <img
                 src="https://images.unsplash.com/photo-1641157140295-b477ca55ddef?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2340&q=80"
                 alt="Image"
                 className="object-cover w-full h-full"
               />
             </div>
-            <div className="rounded-3xl overflow-hidden shadow-xl">
+            <div className="rounded-3xl overflow-hidden">
               <img
                 src="https://images.unsplash.com/photo-1640608178753-a56a4fa34b22?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1973&q=80"
                 alt="Image"

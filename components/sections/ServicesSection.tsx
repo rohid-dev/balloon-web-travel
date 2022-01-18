@@ -14,7 +14,7 @@ const ServicesSection = () => {
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
             deserunt ducimus alias quam veritatis animi?
           </p>
-          <div className="relative overflow-hidden aspect-[16/9] rounded-3xl shadow-xl">
+          <div className="relative overflow-hidden aspect-[16/9] rounded-3xl">
             <img
               src="https://images.unsplash.com/photo-1514923995763-768e52f5af87?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80"
               alt="Image"
