@@ -14,16 +14,20 @@ const Header = () => {
         </Link>
         <div className="lg:flex gap-8 items-center hidden">
           <Link href="/">
-            <a className="text tracking-wide flex items-center gap-1">
+            <a className="text tracking-wide flex items-center gap-1 text-slate-300 hover:text-white">
               <p>Destinations</p>
               {/* <ChevronDownIcon className="w-4 h-4" /> */}
             </a>
           </Link>
           <Link href="/">
-            <a className="text tracking-wide">About Us</a>
+            <a className="text tracking-wide text-slate-300 hover:text-white">
+              About Us
+            </a>
           </Link>
           <Link href="/">
-            <a className="text tracking-wide">Contact Us</a>
+            <a className="text tracking-wide text-slate-300 hover:text-white">
+              Contact Us
+            </a>
           </Link>
         </div>
       </div>
